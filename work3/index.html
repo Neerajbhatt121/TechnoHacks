@@ -7,28 +7,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-    <div class="nav_header">
-        <div class="nav__logo">
-            <a herf="#">Soul <span>Travel</span></a>
+    <div class="main">
+        <input class="text" type="text" id="display" ></input>
+        <div class="btnContainer">
+            <div class="row">
+
+                <input type="button" value="Del" onclick="cutting()"/>
+                <input type="button" value="/"  onclick="document.getElementById('display').value += '/'"/>
+                <input type="button" value="*"  onclick="document.getElementById('display').value += '*'"/>
+                <input type="button" value="C"  onclick="document.getElementById('display').value = ''"/>
+                </div>
+        <div class="row">
+            <input type="button" value="7"  onclick="document.getElementById('display').value += '7'"/>
+            <input type="button" value="8"  onclick="document.getElementById('display').value += '8'"/>
+            <input type="button" value="9"  onclick="document.getElementById('display').value += '9'"/>
+            <input type="button" value="%"  onclick="document.getElementById('display').value += '%'"/>
         </div>
-        <div class="nav_menu_btn" id="menu-btn">
-             <span><i class="fa-solid fa-bars"></i></span>
+            
+        <div class="row">
+            <input type="button"  value="4"  onclick="document.getElementById('display').value += '4'"/>
+            <input type="button" value="5"  onclick="document.getElementById('display').value += '5'"/>
+            <input type="button" value="6"  onclick="document.getElementById('display').value += '6'"/>
+            <input type="button" value="+"  onclick="document.getElementById('display').value += '+'"/>
+        </div>
+          
+        <div class="row">
+            <input type="button" value="1"  onclick="document.getElementById('display').value += '1'"/>
+            <input type="button" value="2"  onclick="document.getElementById('display').value += '2'"/>
+            <input type="button" value="3"  onclick="document.getElementById('display').value += '3'"/>
+            <input type="button" value="-"  onclick="document.getElementById('display').value += '-'"/>
+        </div>
+           
+        <div class="row">   
+            <input type="button" value="."  onclick="document.getElementById('display').value += '.'"/>
+            <input type="button" value="0"  onclick="document.getElementById('display').value += '0'"/>
+            <input type="button" value="00"  onclick="document.getElementById('display').value += '00'"/>
+            <input type="button" value="="  onclick="result()"/>
+        </div>
+               
         </div>
     </div>
-        <ul class="nav__links" id="nav_links">
-            <li><a href="#">Destination</a></li>
-            <li><a href="#">Package</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="nav__btns">
-            <button class="btn sign__up">Sign Up</button>
-            <button class="btn sign__in">Sign In</button>
-        </div>
-
-    </nav>
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/409df81f49.js" crossorigin="anonymous"></script>
 </body>
 </html>
